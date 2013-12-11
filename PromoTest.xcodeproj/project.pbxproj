@@ -21,6 +21,11 @@
 		979FB23818397D4300F8EDA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979FB21A18397D4300F8EDA3 /* UIKit.framework */; };
 		979FB24018397D4300F8EDA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 979FB23E18397D4300F8EDA3 /* InfoPlist.strings */; };
 		979FB24218397D4300F8EDA3 /* PromoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 979FB24118397D4300F8EDA3 /* PromoTestTests.m */; };
+		979FB24E1839912700F8EDA3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 979FB24D1839912700F8EDA3 /* MBProgressHUD.m */; };
+		979FB2501839923700F8EDA3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979FB24F1839923700F8EDA3 /* CFNetwork.framework */; };
+		979FB2521839924100F8EDA3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979FB2511839924100F8EDA3 /* SystemConfiguration.framework */; };
+		979FB2541839925100F8EDA3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979FB2531839925100F8EDA3 /* MobileCoreServices.framework */; };
+		979FB2561839927000F8EDA3 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 979FB2551839927000F8EDA3 /* libz.1.2.5.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		979FB23D18397D4300F8EDA3 /* PromoTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PromoTestTests-Info.plist"; sourceTree = "<group>"; };
 		979FB23F18397D4300F8EDA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		979FB24118397D4300F8EDA3 /* PromoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromoTestTests.m; sourceTree = "<group>"; };
+		979FB24C1839912700F8EDA3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		979FB24D1839912700F8EDA3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		979FB24F1839923700F8EDA3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		979FB2511839924100F8EDA3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		979FB2531839925100F8EDA3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		979FB2551839927000F8EDA3 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979FB2561839927000F8EDA3 /* libz.1.2.5.dylib in Frameworks */,
+				979FB2541839925100F8EDA3 /* MobileCoreServices.framework in Frameworks */,
+				979FB2521839924100F8EDA3 /* SystemConfiguration.framework in Frameworks */,
+				979FB2501839923700F8EDA3 /* CFNetwork.framework in Frameworks */,
 				979FB21918397D4300F8EDA3 /* CoreGraphics.framework in Frameworks */,
 				979FB21B18397D4300F8EDA3 /* UIKit.framework in Frameworks */,
 				979FB21718397D4300F8EDA3 /* Foundation.framework in Frameworks */,
@@ -82,6 +97,7 @@
 		979FB20A18397D4200F8EDA3 = {
 			isa = PBXGroup;
 			children = (
+				979FB24B183990C700F8EDA3 /* MBProgressHUD */,
 				979FB21C18397D4300F8EDA3 /* PromoTest */,
 				979FB23B18397D4300F8EDA3 /* PromoTestTests */,
 				979FB21518397D4200F8EDA3 /* Frameworks */,
@@ -101,6 +117,10 @@
 		979FB21518397D4200F8EDA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				979FB2551839927000F8EDA3 /* libz.1.2.5.dylib */,
+				979FB2531839925100F8EDA3 /* MobileCoreServices.framework */,
+				979FB2511839924100F8EDA3 /* SystemConfiguration.framework */,
+				979FB24F1839923700F8EDA3 /* CFNetwork.framework */,
 				979FB21618397D4200F8EDA3 /* Foundation.framework */,
 				979FB21818397D4300F8EDA3 /* CoreGraphics.framework */,
 				979FB21A18397D4300F8EDA3 /* UIKit.framework */,
@@ -150,6 +170,15 @@
 				979FB23E18397D4300F8EDA3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		979FB24B183990C700F8EDA3 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				979FB24C1839912700F8EDA3 /* MBProgressHUD.h */,
+				979FB24D1839912700F8EDA3 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +281,7 @@
 				979FB22D18397D4300F8EDA3 /* ViewController.m in Sources */,
 				979FB22718397D4300F8EDA3 /* AppDelegate.m in Sources */,
 				979FB22318397D4300F8EDA3 /* main.m in Sources */,
+				979FB24E1839912700F8EDA3 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
